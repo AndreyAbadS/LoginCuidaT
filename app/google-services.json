@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "890987067298",
+    "firebase_url": "https://cuidat-e6645-default-rtdb.firebaseio.com",
+    "project_id": "cuidat-e6645",
+    "storage_bucket": "cuidat-e6645.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890987067298:android:b23bb8cef1aa9a304664fb",
+        "android_client_info": {
+          "package_name": "com.example.cuidatv3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890987067298-lq9gqctl7nja3js6rrg7sdmnibn606m0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZQcIhL5cWV3L7_CSDJ6UuOE9X1rk94b0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890987067298-lq9gqctl7nja3js6rrg7sdmnibn606m0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
