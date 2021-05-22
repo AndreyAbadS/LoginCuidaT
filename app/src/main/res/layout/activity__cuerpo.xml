@@ -6,4 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".Activity_Cuerpo">
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/Buttom_navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/nav_menu"
+        android:background="#4559C6"
+        app:itemIconTint="#fff"
+        app:itemTextColor="#fff"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Buttom_navigationBar"
+        app:defaultNavHost = "true"
+        app:navGraph="@navigation/main_graph"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

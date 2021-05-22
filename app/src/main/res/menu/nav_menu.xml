@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/Ejercicios"
+        android:icon="@drawable/ic_baseline_directions_run_24"
+        android:title="Ejercicios"
+        />
+    <item
+        android:id="@+id/TablaAlimentos"
+        android:icon="@drawable/ic_baseline_content_paste_24"
+        android:title="Tabla de alimentos"
+        />
+    <item
+        android:id="@+id/Calculadoras"
+        android:icon="@drawable/ic_baseline_calculate_24"
+        android:title="Calculadoras"
+        />
 </menu>

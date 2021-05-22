@@ -13,16 +13,19 @@ import kotlinx.android.synthetic.main.activity__register.*
 import java.util.regex.Pattern
 
 class Activity_Register : AppCompatActivity() {
+    //instanciar firebase
     private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity__register)
+        //inicializar firebase
         auth = Firebase.auth
-
+        //Funcion que tiene el boton registrar
         Btn_Registrar.setOnClickListener {
             singUpUser()
         }
     }
+    //Funcion para registrar y verificar los campos vacios
     fun singUpUser(){
         if (tv_UserName.text.toString().isEmpty()){
             tv_UserName.error = "Porfavor intruduce un correo electronico en el campo"
@@ -38,6 +41,7 @@ class Activity_Register : AppCompatActivity() {
             tv_Password.requestFocus()
             return
         }
+        //Proceso de creacion de cuenta en firebase
         auth.createUserWithEmailAndPassword(tv_UserName.text.toString(), tv_Password.text.toString())
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {

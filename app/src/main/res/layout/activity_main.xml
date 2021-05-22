@@ -29,11 +29,12 @@
             android:textSize="30dp"
             android:text="CuidaT" />
 
+
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:srcCompat="@tools:sample/avatars" />
+            android:layout_height="160dp"
+            android:src="@drawable/cuidat"  />
 
         <TextView
             android:id="@+id/textView2"
@@ -84,6 +85,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="registrarse" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

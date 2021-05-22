@@ -7,8 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.cuidatv3.R
 
-class Fragment_Calculadoras : Fragment(R.layout.fragment__calculadoras) {
+class fragment_EjercicioPiernaMenu : Fragment(R.layout.fragment__ejercicio_pierna_menu) {
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
     }
+
+
 }

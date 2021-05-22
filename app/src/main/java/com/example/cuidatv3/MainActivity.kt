@@ -16,22 +16,24 @@ import kotlinx.android.synthetic.main.activity_main.tv_Password
 import kotlinx.android.synthetic.main.activity_main.tv_UserName
 
 class MainActivity : AppCompatActivity() {
+    //Instancia de firebase
     private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        //iniciar la autenticacion
         auth = Firebase.auth
-
+        //Funcion del boton registro
         Btn_SingUp.setOnClickListener {
             startActivity(Intent(this, Activity_Register::class.java))
             finish()
         }
-
+        //Funcion del boton loguear
         Btn_Login.setOnClickListener {
             reload()
         }
     }
-
+    //Al inicio de la actividad ver si esta autenticado
     public override fun onStart() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
@@ -40,6 +42,7 @@ class MainActivity : AppCompatActivity() {
             reload();
         }
     }
+    //Funcion para autenticar la verificacion del email
     private fun updateUI(currentUser: FirebaseUser?){
         if(currentUser != null){
             if(currentUser.isEmailVerified){
@@ -56,7 +59,7 @@ class MainActivity : AppCompatActivity() {
                 .show()
         }
     }
-
+    //funcion para checar los textbox si estan vacios
     fun  reload(){
         if (tv_UserName.text.toString().isEmpty()){
             tv_UserName.error = "Porfavor intruduce un correo electronico en el campo"

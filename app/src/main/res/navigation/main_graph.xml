@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/fragment_TablaDeAlimentos">
+
+    <fragment
+        android:id="@+id/fragment_ejercicios"
+        android:name="com.example.cuidatv3.fragments.fragment_ejercicios"
+        android:label="fragment_ejercicios"
+        tools:layout="@layout/fragment_ejercicios" >
+        <action
+            android:id="@+id/action_fragment_ejercicios_to_fragment_EjercicioPiernaMenu"
+            app:destination="@id/fragment_EjercicioPiernaMenu" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_TablaDeAlimentos"
+        android:name="com.example.cuidatv3.fragments.Fragment_TablaDeAlimentos"
+        android:label="fragment__tabla_de_alimentos"
+        tools:layout="@layout/fragment__tabla_de_alimentos" >
+        <action
+            android:id="@+id/action_fragment_TablaDeAlimentos_to_fragment_contenidoFrutas"
+            app:destination="@id/fragment_contenidoFrutas" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_contenidoFrutas"
+        android:name="com.example.cuidatv3.fragments.fragment_contenidoFrutas"
+        android:label="fragment_contenido_frutas"
+        tools:layout="@layout/fragment_contenido_frutas" />
+    <fragment
+        android:id="@+id/fragment_EjercicioPiernaMenu"
+        android:name="com.example.cuidatv3.fragments.fragment_EjercicioPiernaMenu"
+        android:label="fragment__ejercicio_pierna_menu"
+        tools:layout="@layout/fragment__ejercicio_pierna_menu" >
+        <action
+            android:id="@+id/action_fragment_EjercicioPiernaMenu_to_fragment_ContentEjer2"
+            app:destination="@id/fragment_ContentEjer2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_ContentEjer2"
+        android:name="com.example.cuidatv3.fragments.Fragment_ContentEjer"
+        android:label="fragment__content_ejer"
+        tools:layout="@layout/fragment__content_ejer" />
+</navigation>
