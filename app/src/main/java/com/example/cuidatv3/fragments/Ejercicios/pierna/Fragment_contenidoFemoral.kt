@@ -1,8 +1,10 @@
-package com.example.cuidatv3.fragments
+package com.example.cuidatv3.fragments.Ejercicios
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.cuidatv3.Adaptadores.EjercicioAdapter
 import com.example.cuidatv3.EjerciciosLis
@@ -13,22 +15,20 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 import kotlinx.android.synthetic.main.fragment__content_ejer.*
 
-class Fragment_ContentEjer : Fragment(R.layout.fragment__content_ejer) {
-    private val db:FirebaseFirestore = FirebaseFirestore.getInstance()
-    private val collectionReference:CollectionReference = db.collection("EjerciciosPiernaCuadricep")
+
+class fragment_contenidoFemoral : Fragment(R.layout.fragment_contenido_femoral) {
+    private val db: FirebaseFirestore = FirebaseFirestore.getInstance()
+    private val collectionReference: CollectionReference = db.collection("EjerciciosPiernaFemoral")
     var ejercicioadapter: EjercicioAdapter? = null
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        setupRecyclerview()
-
     }
 
     private fun setupRecyclerview() {
-        val query:Query = collectionReference
-        val firestoreRecyclerOptions:FirestoreRecyclerOptions<EjerciciosLis> = FirestoreRecyclerOptions.Builder<EjerciciosLis>()
-            .setQuery(query,EjerciciosLis::class.java)
-                .build()
+        val query: Query = collectionReference
+        val firestoreRecyclerOptions: FirestoreRecyclerOptions<EjerciciosLis> = FirestoreRecyclerOptions.Builder<EjerciciosLis>()
+            .setQuery(query, EjerciciosLis::class.java)
+            .build()
 
         ejercicioadapter = EjercicioAdapter(firestoreRecyclerOptions)
 

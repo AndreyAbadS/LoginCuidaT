@@ -1,4 +1,4 @@
-package com.example.cuidatv3.fragments
+package com.example.cuidatv3.fragments.Ejercicios
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,11 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.cuidatv3.R
 
-class fragment_EjercicioPiernaMenu : Fragment(R.layout.fragment__ejercicio_pierna_menu) {
-
+class fragment_ContenidoHombro : Fragment(R.layout.fragment__contenido_hombro) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
     }
-
-
 }

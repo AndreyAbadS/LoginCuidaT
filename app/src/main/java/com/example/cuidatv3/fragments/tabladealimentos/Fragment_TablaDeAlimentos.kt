@@ -26,5 +26,13 @@ class Fragment_TablaDeAlimentos : Fragment(R.layout.fragment__tabla_de_alimentos
             findNavController().navigate(R.id.action_fragment_TablaDeAlimentos_to_fragment_contenidoFrutas)
         }
 
+        Cardview_Carnes.setOnClickListener {
+          //  findNavController().navigate()
+        }
+
+        Cardview_Verduras.setOnClickListener {
+          //  findNavController().navigate()
+        }
+
     }
 }

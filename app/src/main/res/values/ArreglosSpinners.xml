@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ComidasVerduras">
+        <item>Espinaca ruda picada</item>
+        <item>Nopal cocido</item>
+        <item>Tomate verde</item>
+        <item>Zanahoria cruda picada</item>
+        <item>Jitomate</item>
+        <item>Lechuga</item>
+    </string-array>
+</resources>
