@@ -1,4 +1,4 @@
-package com.example.cuidatv3.fragments.Ejercicios.brazo
+package com.example.cuidatv3.fragments.Ejercicios.pierna
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -21,7 +21,6 @@ class Fragment_ContentEjer : Fragment(R.layout.fragment__content_ejer) {
         super.onViewCreated(view, savedInstanceState)
 
         setupRecyclerview()
-
     }
 
     private fun setupRecyclerview() {

@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
                 .show()
         }
     }
-    //funcion para checar los textbox si estan vacios
+    //funcion para ver si los textbox si estan vacios
     fun  reload(){
         if (tv_UserName.text.toString().isEmpty()){
             tv_UserName.error = "Porfavor intruduce un correo electronico en el campo"
@@ -75,6 +75,7 @@ class MainActivity : AppCompatActivity() {
             tv_Password.requestFocus()
             return
         }
+        //Metodo para corroborar si los datos son correctos
         auth.signInWithEmailAndPassword(tv_UserName.text.toString(), tv_Password.text.toString())
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {

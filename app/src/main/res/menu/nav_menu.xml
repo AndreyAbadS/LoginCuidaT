@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/Ejercicios"
+        android:id="@+id/fragment_ejercicios"
         android:icon="@drawable/ic_baseline_directions_run_24"
-        android:title="Ejercicios"
+        android:title="@string/ejercicios"
         />
     <item
-        android:id="@+id/TablaAlimentos"
+        android:id="@+id/fragment_TablaDeAlimentos"
         android:icon="@drawable/ic_baseline_content_paste_24"
-        android:title="Tabla de alimentos"
+        android:title="@string/tabla_de_alimentos"
         />
     <item
-        android:id="@+id/Calculadoras"
+        android:id="@+id/fragment_Calculadoras"
         android:icon="@drawable/ic_baseline_calculate_24"
-        android:title="Calculadoras"
+        android:title="@string/calculadoras"
         />
 </menu>

@@ -8,4 +8,12 @@
         <item>Jitomate</item>
         <item>Lechuga</item>
     </string-array>
+
+    <string-array name="Comidasfrutas">
+        <item>Mango picado</item>
+        <item>Manzana</item>
+        <item>Melon</item>
+        <item>Naranja</item>
+        <item>Pera</item>
+    </string-array>
 </resources>

@@ -24,10 +24,14 @@ class EjercicioAdapter(options: FirestoreRecyclerOptions<EjerciciosLis>) :
 
     class EjercicioAdapterVH(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bindview(ejercicio: EjerciciosLis){
-            Glide.with(this.itemView).load(ejercicio.imageUrl).into(itemView.ImaV_FotoEjercicio)
+            Glide.with(this.itemView).asGif().load(ejercicio.imageUrl).into(itemView.ImaV_FotoEjercicio)
             itemView.Tv_NomEjer.text = ejercicio.titulo
-            itemView.Tv_DescripEjer.text = ejercicio.Descripcion
+            itemView.Tv_DescripEjer1.text = ejercicio.descripcion1
+            itemView.Tv_DescripEjer2.text = ejercicio.descripcion2
+            itemView.Tv_DescripEjer3.text = ejercicio.descripcion3
+            itemView.Tv_repeticiones.text = ejercicio.repeticiones
         }
+
     }
 
 }

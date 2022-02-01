@@ -22,6 +22,7 @@ class fragment_contenidoFemoral : Fragment(R.layout.fragment_contenido_femoral) 
     var ejercicioadapter: EjercicioAdapter? = null
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setupRecyclerview()
     }
 
     private fun setupRecyclerview() {

@@ -1,4 +1,4 @@
-package com.example.cuidatv3.fragments
+package com.example.cuidatv3.fragments.Ejercicios
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -17,19 +17,20 @@ class fragment_EjerciciosBrazoMenu : Fragment(R.layout.fragment__ejercicios_braz
         super.onViewCreated(view, savedInstanceState)
 
         cardview_bicep.setOnClickListener {
-            //findNavController().navigate()
+            findNavController().navigate(R.id.action_fragment_EjerciciosBrazoMenu_to_fragment_ContenidoBicep)
         }
 
-        cardview_hombro.setOnClickListener {
-            //findNavController().navigate()
+        cardview_pecho.setOnClickListener {
+            findNavController().navigate(R.id.action_fragment_EjerciciosBrazoMenu_to_fragment_ContenidoHombro2)
         }
 
         cardview_tricep.setOnClickListener {
-            //findNavController().navigate()
+            findNavController().navigate(R.id.action_fragment_EjerciciosBrazoMenu_to_fragment_ContenidoTricep)
         }
 
-        cardview_hombro.setOnClickListener{
-            //findNavController().navigate()
+        cardview_antebrazo.setOnClickListener {
+            findNavController().navigate(R.id.action_fragment_EjerciciosBrazoMenu_to_fragment_ContenidoAntebrazo)
         }
+
     }
 }

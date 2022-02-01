@@ -7,39 +7,150 @@
 
     <fragment
         android:id="@+id/fragment_ejercicios"
-        android:name="com.example.cuidatv3.fragments.fragment_ejercicios"
+        android:name="com.example.cuidatv3.fragments.Ejercicios.fragment_ejercicios"
         android:label="fragment_ejercicios"
         tools:layout="@layout/fragment_ejercicios" >
         <action
             android:id="@+id/action_fragment_ejercicios_to_fragment_EjercicioPiernaMenu"
             app:destination="@id/fragment_EjercicioPiernaMenu" />
+        <action
+            android:id="@+id/action_fragment_ejercicios_to_fragment_EjerciciosBrazoMenu"
+            app:destination="@id/fragment_EjerciciosBrazoMenu" />
     </fragment>
     <fragment
         android:id="@+id/fragment_TablaDeAlimentos"
-        android:name="com.example.cuidatv3.fragments.Fragment_TablaDeAlimentos"
+        android:name="com.example.cuidatv3.fragments.tabladealimentos.Fragment_TablaDeAlimentos"
         android:label="fragment__tabla_de_alimentos"
         tools:layout="@layout/fragment__tabla_de_alimentos" >
         <action
             android:id="@+id/action_fragment_TablaDeAlimentos_to_fragment_contenidoFrutas"
             app:destination="@id/fragment_contenidoFrutas" />
+        <action
+            android:id="@+id/action_fragment_TablaDeAlimentos_to_fragment_contenidoVerduras"
+            app:destination="@id/fragment_contenidoVerduras" />
+        <action
+            android:id="@+id/action_fragment_TablaDeAlimentos_to_fragment_MenuCarnes"
+            app:destination="@id/fragment_MenuCarnes" />
     </fragment>
     <fragment
         android:id="@+id/fragment_contenidoFrutas"
-        android:name="com.example.cuidatv3.fragments.fragment_contenidoFrutas"
+        android:name="com.example.cuidatv3.fragments.tabladealimentos.fragment_contenidoFrutas"
         android:label="fragment_contenido_frutas"
         tools:layout="@layout/fragment_contenido_frutas" />
     <fragment
         android:id="@+id/fragment_EjercicioPiernaMenu"
-        android:name="com.example.cuidatv3.fragments.fragment_EjercicioPiernaMenu"
+        android:name="com.example.cuidatv3.fragments.Ejercicios.fragment_EjercicioPiernaMenu"
         android:label="fragment__ejercicio_pierna_menu"
         tools:layout="@layout/fragment__ejercicio_pierna_menu" >
         <action
             android:id="@+id/action_fragment_EjercicioPiernaMenu_to_fragment_ContentEjer2"
             app:destination="@id/fragment_ContentEjer2" />
+        <action
+            android:id="@+id/action_fragment_EjercicioPiernaMenu_to_fragment_contenidoFemoral"
+            app:destination="@id/fragment_contenidoFemoral" />
+        <action
+            android:id="@+id/action_fragment_EjercicioPiernaMenu_to_fragment_ContenidoPantorrilla"
+            app:destination="@id/fragment_ContenidoPantorrilla" />
+        <action
+            android:id="@+id/action_fragment_EjercicioPiernaMenu_to_fragment_ContenidoGluteo"
+            app:destination="@id/fragment_ContenidoGluteo" />
     </fragment>
     <fragment
         android:id="@+id/fragment_ContentEjer2"
-        android:name="com.example.cuidatv3.fragments.Fragment_ContentEjer"
+        android:name="com.example.cuidatv3.fragments.Ejercicios.pierna.Fragment_ContentEjer"
         android:label="fragment__content_ejer"
         tools:layout="@layout/fragment__content_ejer" />
+    <fragment
+        android:id="@+id/fragment_Calculadoras"
+        android:name="com.example.cuidatv3.fragments.Calculadoras.Fragment_Calculadoras"
+        android:label="fragment__calculadoras"
+        tools:layout="@layout/fragment__calculadoras" />
+    <fragment
+        android:id="@+id/fragment_EjerciciosBrazoMenu"
+        android:name="com.example.cuidatv3.fragments.Ejercicios.fragment_EjerciciosBrazoMenu"
+        android:label="fragment__ejercicios_brazo_menu"
+        tools:layout="@layout/fragment__ejercicios_brazo_menu" >
+        <action
+            android:id="@+id/action_fragment_EjerciciosBrazoMenu_to_fragment_ContenidoAntebrazo"
+            app:destination="@id/fragment_ContenidoAntebrazo" />
+        <action
+            android:id="@+id/action_fragment_EjerciciosBrazoMenu_to_fragment_ContenidoHombro2"
+            app:destination="@id/fragment_ContenidoHombro" />
+        <action
+            android:id="@+id/action_fragment_EjerciciosBrazoMenu_to_fragment_ContenidoBicep"
+            app:destination="@id/fragment_ContenidoBicep" />
+        <action
+            android:id="@+id/action_fragment_EjerciciosBrazoMenu_to_fragment_ContenidoTricep"
+            app:destination="@id/fragment_ContenidoTricep" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_ContenidoGluteo"
+        android:name="com.example.cuidatv3.fragments.Ejercicios.fragment_ContenidoGluteo"
+        android:label="fragment__contenido_gluteo"
+        tools:layout="@layout/fragment__contenido_gluteo" />
+    <fragment
+        android:id="@+id/fragment_ContenidoPantorrilla"
+        android:name="com.example.cuidatv3.fragments.Ejercicios.fragment_ContenidoPantorrilla"
+        android:label="fragment__contenido_pantorrilla"
+        tools:layout="@layout/fragment__contenido_pantorrilla" />
+    <fragment
+        android:id="@+id/fragment_contenidoFemoral"
+        android:name="com.example.cuidatv3.fragments.Ejercicios.fragment_contenidoFemoral"
+        android:label="fragment_contenido_femoral"
+        tools:layout="@layout/fragment_contenido_femoral" />
+    <fragment
+        android:id="@+id/fragment_ContenidoAntebrazo"
+        android:name="com.example.cuidatv3.fragments.Ejercicios.fragment_ContenidoAntebrazo"
+        android:label="fragment__contenido_antebrazo"
+        tools:layout="@layout/fragment__contenido_antebrazo" />
+    <fragment
+        android:id="@+id/fragment_ContenidoBicep"
+        android:name="com.example.cuidatv3.fragments.Ejercicios.fragment_ContenidoBicep"
+        android:label="fragment__contenido_bicep"
+        tools:layout="@layout/fragment__contenido_bicep" />
+    <fragment
+        android:id="@+id/fragment_ContenidoTricep"
+        android:name="com.example.cuidatv3.fragments.Ejercicios.fragment_ContenidoTricep"
+        android:label="fragment__contenido_tricep"
+        tools:layout="@layout/fragment__contenido_tricep" />
+    <fragment
+        android:id="@+id/fragment_contenidoCarnes"
+        android:name="com.example.cuidatv3.fragments.tabladealimentos.fragment_contenidoCarnes"
+        android:label="fragment_contenido_carnes"
+        tools:layout="@layout/fragment_contenido_carnes" />
+    <fragment
+        android:id="@+id/fragment_contenidoVerduras"
+        android:name="com.example.cuidatv3.fragments.tabladealimentos.fragment_contenidoVerduras"
+        android:label="fragment_contenido_verduras"
+        tools:layout="@layout/fragment_contenido_verduras" />
+    <fragment
+        android:id="@+id/fragment_MenuCarnes"
+        android:name="com.example.cuidatv3.fragments.tabladealimentos.fragment_MenuCarnes"
+        android:label="fragment__menu_carnes"
+        tools:layout="@layout/fragment__menu_carnes" >
+        <action
+            android:id="@+id/action_fragment_MenuCarnes_to_fragment_contenidoCarnes"
+            app:destination="@id/fragment_contenidoCarnes" />
+        <action
+            android:id="@+id/action_fragment_MenuCarnes_to_fragment_contenidoPollo"
+            app:destination="@id/fragment_contenidoPollo" />
+        <action
+            android:id="@+id/action_fragment_MenuCarnes_to_fragment_contenidoPescados"
+            app:destination="@id/fragment_contenidoPescados" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_contenidoPollo"
+        android:name="com.example.cuidatv3.fragments.tabladealimentos.fragment_contenidoPollo"
+        android:label="fragment_contenido_pollo"
+        tools:layout="@layout/fragment_contenido_pollo" />
+    <fragment
+        android:id="@+id/fragment_contenidoPescados"
+        android:name="com.example.cuidatv3.fragments.tabladealimentos.fragment_contenidoPescados"
+        android:label="fragment_contenido_pescados"
+        tools:layout="@layout/fragment_contenido_pescados" />
+    <fragment
+        android:id="@+id/fragment_ContenidoHombro"
+        android:name="com.example.cuidatv3.fragments.Ejercicios.fragment_ContenidoHombro"
+        android:label="fragment__contenido_hombro"
+        tools:layout="@layout/fragment__contenido_hombro" />
 </navigation>

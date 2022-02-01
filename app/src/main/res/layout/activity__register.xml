@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_app"
     tools:context=".Activity_Register">
 
     <LinearLayout
@@ -11,12 +12,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="212dp">
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="219dp"
-        tools:layout_editor_absoluteY="161dp"
+        tools:layout_editor_absoluteY="212dp"
         android:layout_margin="10dp">
 
         <TextView
@@ -24,7 +20,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="30dp"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
             android:text="CuidaT" />
 
 
@@ -40,12 +38,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20dp"
+            android:textColor="@color/black"
             android:text="Correo Electronico" />
 
         <EditText
             android:id="@+id/tv_UserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
             android:ems="10"
             android:inputType="textEmailAddress" />
 
@@ -53,6 +53,7 @@
             android:id="@+id/texview3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:text="Contraseña" />
 
@@ -60,29 +61,9 @@
             android:id="@+id/tv_Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
             android:ems="10"
             android:inputType="textPassword" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="Edad" />
-
-        <EditText
-            android:id="@+id/tv_edad"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="Sexo" />
 
         <Button
             android:id="@+id/Btn_Registrar"

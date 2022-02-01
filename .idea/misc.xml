@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/drawable/back_calculadoras.xml" value="0.26614583333333336" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/drawable/back_carnes.xml" value="0.26614583333333336" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/drawable/back_ejercicios.xml" value="0.26614583333333336" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/drawable/back_frutas.xml" value="0.26614583333333336" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/drawable/back_pescado.xml" value="0.12447916666666667" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/drawable/back_pollo.xml" value="0.12447916666666667" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/drawable/back_tablaaalimentos.xml" value="0.26614583333333336" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/drawable/back_verduras.xml" value="0.26614583333333336" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/drawable/background_app.xml" value="0.26614583333333336" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26614583333333336" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/drawable/spinnercomida.xml" value="1.5" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/activity__cuerpo.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/activity__register.xml" value="0.24456521739130435" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/fragment__calculadoras.xml" value="0.12708333333333333" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/fragment__contenido_antebrazo.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/fragment__ejercicio_pierna_menu.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/fragment__ejercicios_brazo_menu.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/fragment__menu_carnes.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/fragment__tabla_de_alimentos.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/fragment_calculadoras_fragment.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/fragment_contenido_carnes.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/fragment_contenido_frutas.xml" value="0.24003623188405798" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/fragment_contenido_pescados.xml" value="0.10833333333333334" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/fragment_contenido_pollo.xml" value="0.10833333333333334" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/fragment_contenido_verduras.xml" value="0.24456521739130435" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/fragment_ejercicios.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/item_row.xml" value="0.24003623188405798" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/item_row3.xml" value="0.19791666666666666" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/layout/item_row4.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProyectos/Cuidatv3/app/src/main/res/menu/nav_menu.xml" value="0.4" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

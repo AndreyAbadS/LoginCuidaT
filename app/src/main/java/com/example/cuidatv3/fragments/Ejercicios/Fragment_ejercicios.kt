@@ -1,4 +1,4 @@
-package com.example.cuidatv3.fragments
+package com.example.cuidatv3.fragments.Ejercicios
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -19,7 +19,7 @@ class fragment_ejercicios : Fragment(R.layout.fragment_ejercicios) {
         }
 
         Cardview_brazo.setOnClickListener {
-            //findNavController().navigate()
+            findNavController().navigate(R.id.action_fragment_ejercicios_to_fragment_EjerciciosBrazoMenu)
         }
     }
 }

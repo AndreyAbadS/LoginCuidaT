@@ -3,39 +3,207 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/ImaV_FotoEjercicio"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:background="@color/white"/>
-
-    <LinearLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="20dp"
+        android:layout_gravity="center_vertical|center_horizontal">
 
-        <TextView
-            android:id="@+id/Tv_NomEjer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:textStyle="italic"
-            android:textSize="20dp"
-            tools:text="hola"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/Tv_DescripEjer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:textStyle="bold"
-            android:textSize="20dp"
-            tools:text="hola Descrip"/>
+            <ImageView
+                android:id="@+id/ImaV_Comida"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:background="@color/white"/>
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Tv_NomAlimento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="italic"
+                    android:textSize="25dp"
+                    android:textColor="#287819"
+                    tools:text="Nombre Alimento"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textColor="#CA4343"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:text="Cantidad Sugerida"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:id="@+id/Tv_CantidadSugerida"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        tools:text="Cantidad Sugerida"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#CA4343"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:text="Unidad"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/Tv_Unidad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        tools:text="Unidad"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#CA4343"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:text="Energia"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/Tv_Energia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        tools:text="Energia"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#CA4343"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:text="Proteina"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/Tv_Proteina"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        tools:text="Proteina"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#CA4343"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:text="Fibra"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/Tv_Fibra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        tools:text="Fibra"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#CA4343"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:text="Peso neto"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/Tv_PesoNeto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        tools:text="pesoneto"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 </LinearLayout>
